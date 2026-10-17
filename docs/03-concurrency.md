@@ -1,6 +1,8 @@
 # 03 · Concurrency: GCD and async/await
 
-[← Index](../README.md) · [← Swift fundamentals](02-swift-fundamentals.md) · [Next: Networking and data →](04-networking-and-data.md)
+[← Index](../README.md) · [← Swift fundamentals](02-swift-fundamentals.md) · [GCD deep dive](15-gcd.md) · [Next: Networking and data →](04-networking-and-data.md)
+
+> **GCD deep dive:** queues, QoS, deadlocks, barriers, semaphores, thread explosion, debounce → **[15 · GCD](15-gcd.md)**.
 
 Learn **both styles**:
 - **GCD (`DispatchQueue`) + completion handlers** was the iOS standard for about ten years. Most existing banking codebases are full of it.
@@ -567,4 +569,4 @@ label.text = $1,250.50
 
 ---
 
-[← Index](../README.md) · [← Swift fundamentals](02-swift-fundamentals.md) · [Next: Networking and data →](04-networking-and-data.md)
+[← Index](../README.md) · [← Swift fundamentals](02-swift-fundamentals.md) · [GCD deep dive](15-gcd.md) · [Next: Networking and data →](04-networking-and-data.md)

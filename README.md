@@ -32,6 +32,7 @@ New here? Start with **[01 · Setup and running the examples](docs/01-setup.md)*
 | 12 | [Interview prep (Cambodian banks)](docs/12-interview-prep.md) | process, questions with answers, KHQR, live coding | 🐧 |
 | 13 | [Capstone: MyBank](docs/13-capstone.md) | a portfolio app that uses every section | Xcode |
 | 14 | [UIKit component catalog](docs/14-uikit-components.md) | every common component: banking use case, tips and tricks, gotchas, snippets | 🍎 reference |
+| 15 | [GCD deep dive](docs/15-gcd.md) | queues, sync vs async, QoS, deadlocks, barriers, DispatchGroup, semaphores, thread explosion, debounce | 🐧 |
 
 **Legend:** ❌ bad · ✅ good · 👀 explore · 🐧 runs anywhere Swift runs · 🍎 needs Xcode (iOS Playground or app)
 
@@ -71,6 +72,13 @@ New here? Start with **[01 · Setup and running the examples](docs/01-setup.md)*
 | 09 | Logging | [bad](examples/09-security/01-logging-bad.swift) | [good](examples/09-security/01-logging-good.swift) |
 | 09 | Idempotent transfers | [bad](examples/09-security/02-idempotency-bad.swift) | [good](examples/09-security/02-idempotency-good.swift) |
 | 10 | Formatters | [bad](examples/10-performance/01-formatter-bad.swift) | [good](examples/10-performance/01-formatter-good.swift) |
+| 15 | GCD: queues 👀 | – | [explore](examples/15-gcd/01-queues-explore.swift) |
+| 15 | GCD: sync deadlock | [bad](examples/15-gcd/02-sync-deadlock-bad.swift) | [good](examples/15-gcd/02-sync-deadlock-good.swift) |
+| 15 | GCD: thread-safe state | [bad](examples/15-gcd/03-concurrent-queue-bad.swift) | [good](examples/15-gcd/03-concurrent-queue-good.swift) |
+| 15 | GCD: DispatchGroup | [bad](examples/15-gcd/04-group-leave-bad.swift) | [good](examples/15-gcd/04-group-leave-good.swift) |
+| 15 | GCD: semaphores | [bad](examples/15-gcd/05-semaphore-main-bad.swift) | [good](examples/15-gcd/05-semaphore-main-good.swift) |
+| 15 | GCD: blocking threads | [bad](examples/15-gcd/06-blocking-threads-bad.swift) | [good](examples/15-gcd/06-blocking-threads-good.swift) |
+| 15 | GCD: debounce | [bad](examples/15-gcd/07-debounce-bad.swift) | [good](examples/15-gcd/07-debounce-good.swift) |
 
 ---
 
@@ -90,12 +98,13 @@ New here? Start with **[01 · Setup and running the examples](docs/01-setup.md)*
 - [ ] 12 Interview prep
 - [ ] 13 Capstone shipped to TestFlight
 - [ ] 14 Component catalog: built one screen with each category
+- [ ] 15 GCD deep dive
 
 ## Roadmap
 
 | Weeks | Focus | Sections |
 |---|---|---|
-| 1–3 | Swift + concurrency (works on Linux/Windows) | 02, 03, 04 |
+| 1–3 | Swift + concurrency (works on Linux/Windows) | 02, 03, 15, 04 |
 | 4–7 | UIKit screens in code | 05 |
 | 8–10 | Architecture, environments, storage, tests | 06, 07, 08 |
 | 11–14 | Security, performance, capstone, interviews | 09, 10, 11, 12, 13 |
