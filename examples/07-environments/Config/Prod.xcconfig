@@ -1,0 +1,9 @@
+// Prod.xcconfig
+#include "Shared.xcconfig"
+#include? "Secrets.xcconfig"
+
+APP_ENVIRONMENT = Prod
+API_BASE_URL = https:/$()/api.mybank.com
+PRODUCT_BUNDLE_IDENTIFIER = com.mybank.app
+APP_DISPLAY_NAME = MyBank
+ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon

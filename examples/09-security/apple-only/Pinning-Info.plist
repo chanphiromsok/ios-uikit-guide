@@ -1,0 +1,20 @@
+<!-- Certificate pinning with no code: add to Info.plist (iOS 14+).
+     Pin the CA (or include a backup key) so a certificate rotation doesn't lock every user out. -->
+<key>NSAppTransportSecurity</key>
+<dict>
+    <key>NSPinnedDomains</key>
+    <dict>
+        <key>api.mybank.com</key>
+        <dict>
+            <key>NSIncludesSubdomains</key>
+            <true/>
+            <key>NSPinnedCAIdentities</key>
+            <array>
+                <dict>
+                    <key>SPKI-SHA256-BASE64</key>
+                    <string>BASE64_SHA256_OF_CA_PUBLIC_KEY=</string>
+                </dict>
+            </array>
+        </dict>
+    </dict>
+</dict>

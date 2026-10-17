@@ -1,0 +1,7 @@
+<!-- Add these keys to your app's Info.plist -->
+<key>AppEnvironment</key>
+<string>$(APP_ENVIRONMENT)</string>
+<key>APIBaseURL</key>
+<string>$(API_BASE_URL)</string>
+<key>CFBundleDisplayName</key>
+<string>$(APP_DISPLAY_NAME)</string>
