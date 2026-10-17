@@ -1,6 +1,6 @@
 # 15 · GCD (Grand Central Dispatch) deep dive
 
-[← Index](../README.md) · [← Concurrency overview](03-concurrency.md)
+[← Index](../README.md) · [← Concurrency overview](03-concurrency.md) · [Next: Patterns from Telegram →](16-patterns-from-telegram.md)
 
 New code uses `async/await` ([03](03-concurrency.md)), but **most existing banking codebases are built on GCD**, and interviewers love GCD questions. This page shows how GCD works, the classic bugs (run them!), and the correct patterns.
 
@@ -802,4 +802,4 @@ async/await. It gives compile-time data-race checking (Swift 6), structured canc
 
 ---
 
-[← Index](../README.md) · [← Concurrency overview](03-concurrency.md)
+[← Index](../README.md) · [← Concurrency overview](03-concurrency.md) · [Next: Patterns from Telegram →](16-patterns-from-telegram.md)

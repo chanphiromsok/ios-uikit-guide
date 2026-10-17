@@ -33,6 +33,7 @@ New here? Start with **[01 · Setup and running the examples](docs/01-setup.md)*
 | 13 | [Capstone: MyBank](docs/13-capstone.md) | a portfolio app that uses every section | Xcode |
 | 14 | [UIKit component catalog](docs/14-uikit-components.md) | every common component: banking use case, tips and tricks, gotchas, snippets | 🍎 reference |
 | 15 | [GCD deep dive](docs/15-gcd.md) | queues, sync vs async, QoS, deadlocks, barriers, DispatchGroup, semaphores, thread explosion, debounce | 🐧 |
+| 16 | [Patterns from Telegram iOS](docs/16-patterns-from-telegram.md) | ideas from Telegram's source rewritten for Swift 6: serial queue, Atomic, latest-only, task bag, timers, observable, coalescing, throttle, layout transitions | 🐧 + 🍎 |
 
 **Legend:** ❌ bad · ✅ good · 👀 explore · 🐧 runs anywhere Swift runs · 🍎 needs Xcode (iOS Playground or app)
 
@@ -79,6 +80,15 @@ New here? Start with **[01 · Setup and running the examples](docs/01-setup.md)*
 | 15 | GCD: semaphores | [bad](examples/15-gcd/05-semaphore-main-bad.swift) | [good](examples/15-gcd/05-semaphore-main-good.swift) |
 | 15 | GCD: blocking threads | [bad](examples/15-gcd/06-blocking-threads-bad.swift) | [good](examples/15-gcd/06-blocking-threads-good.swift) |
 | 15 | GCD: debounce | [bad](examples/15-gcd/07-debounce-bad.swift) | [good](examples/15-gcd/07-debounce-good.swift) |
+| 16 | Serial queue that knows "am I on it?" | – | [good](examples/16-telegram-patterns/01-serial-queue-good.swift) |
+| 16 | Atomic value | – | [good](examples/16-telegram-patterns/02-atomic-good.swift) |
+| 16 | Latest-only job | [bad](examples/16-telegram-patterns/03-latest-only-bad.swift) | [good](examples/16-telegram-patterns/03-latest-only-good.swift) |
+| 16 | Task bag | [bad](examples/16-telegram-patterns/04-task-bag-bad.swift) | [good](examples/16-telegram-patterns/04-task-bag-good.swift) |
+| 16 | Timer without leaks | [bad](examples/16-telegram-patterns/05-timer-bad.swift) | [good](examples/16-telegram-patterns/05-timer-good.swift) |
+| 16 | Observable value | [bad](examples/16-telegram-patterns/06-observable-bad.swift) | [good](examples/16-telegram-patterns/06-observable-good.swift) |
+| 16 | Coalesce UI updates | [bad](examples/16-telegram-patterns/07-coalesce-bad.swift) | [good](examples/16-telegram-patterns/07-coalesce-good.swift) |
+| 16 | Throttle taps | [bad](examples/16-telegram-patterns/08-throttle-bad.swift) | [good](examples/16-telegram-patterns/08-throttle-good.swift) |
+| 16 | Layout transition 🍎 | – | [good](examples/16-telegram-patterns/playground/09-layout-transition-good.swift) |
 
 ---
 
@@ -99,6 +109,7 @@ New here? Start with **[01 · Setup and running the examples](docs/01-setup.md)*
 - [ ] 13 Capstone shipped to TestFlight
 - [ ] 14 Component catalog: built one screen with each category
 - [ ] 15 GCD deep dive
+- [ ] 16 Patterns from Telegram iOS
 
 ## Roadmap
 
@@ -107,7 +118,7 @@ New here? Start with **[01 · Setup and running the examples](docs/01-setup.md)*
 | 1–3 | Swift + concurrency (works on Linux/Windows) | 02, 03, 15, 04 |
 | 4–7 | UIKit screens in code | 05 |
 | 8–10 | Architecture, environments, storage, tests | 06, 07, 08 |
-| 11–14 | Security, performance, capstone, interviews | 09, 10, 11, 12, 13 |
+| 11–14 | Security, performance, capstone, interviews | 09, 10, 11, 12, 13, 16 |
 
 ## How the examples were tested
 
